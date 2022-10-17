@@ -17,6 +17,8 @@ jobs:
       - uses: olafurpg/setup-gpg@v3
       - run: ls
       - run: sbt docs/mdoc
+        with:
+          java-version: adopt@1.11
       - uses: actions/setup-node@v3
         with:
           node-version: '16.x'
