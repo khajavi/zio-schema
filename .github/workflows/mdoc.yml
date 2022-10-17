@@ -15,6 +15,7 @@ jobs:
       - uses: actions/setup-node@v3
       - uses: olafurpg/setup-scala@v13
       - uses: olafurpg/setup-gpg@v3
+      - run: ls
       - run: sbt docs/mdoc
       - uses: actions/setup-node@v3
         with:
